@@ -1,0 +1,8 @@
+{
+  "name": "typeface-jetbrains-mono",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Patrick Eriksson <paleite@users.noreply.github.com> (https://github.com/paleite)",
+  "license": "MIT",
+  "private": true
+}
