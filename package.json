@@ -16,6 +16,9 @@
     "build": "node scripts/build.js",
     "release": "np"
   },
+  "np": {
+    "tests": false
+  },
   "dependencies": {
     "JetBrainsMono": "https://github.com/JetBrains/JetBrainsMono/"
   },

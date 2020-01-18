@@ -1,0 +1,112 @@
+/* JetBrainsMono-Bold-Italic - © 2000-2020 JetBrains s.r.o. Developed with drive and IntelliJ IDEA. */
+@font-face {
+  font-family: "JetBrains Mono";
+  font-style: italic;
+  font-weight: 700;
+  font-feature-settings: "calt" 1, "zero" 1;
+  font-display: swap;
+  src: local("JetBrains Mono Bold Italic"), local("JetBrainsMono-BoldItalic"),
+    url("node_modules/JetBrainsMono/web/woff2/JetBrainsMono-Bold-Italic.woff2")
+      format("woff2"),
+    url("node_modules/JetBrainsMono/web/woff/JetBrainsMono-Bold-Italic.woff")
+      format("woff");
+}
+
+/* JetBrainsMono-Bold - © 2000-2020 JetBrains s.r.o. Developed with drive and IntelliJ IDEA. */
+@font-face {
+  font-family: "JetBrains Mono";
+  font-style: normal;
+  font-weight: 700;
+  font-feature-settings: "calt" 1, "zero" 1;
+  font-display: swap;
+  src: local("JetBrains Mono Bold"), local("JetBrainsMono-Bold"),
+    url("node_modules/JetBrainsMono/web/woff2/JetBrainsMono-Bold.woff2")
+      format("woff2"),
+    url("node_modules/JetBrainsMono/web/woff/JetBrainsMono-Bold.woff")
+      format("woff");
+}
+
+/* JetBrainsMono-ExtraBold-Italic - © 2000-2020 JetBrains s.r.o. Developed with drive and IntelliJ IDEA. */
+@font-face {
+  font-family: "JetBrains Mono ExtraBold";
+  font-style: italic;
+  font-weight: 800;
+  font-feature-settings: "calt" 1, "zero" 1;
+  font-display: swap;
+  src: local("JetBrains Mono ExtBd Ita"), local("JetBrainsMono-ExtraBoldItalic"),
+    url("node_modules/JetBrainsMono/web/woff2/JetBrainsMono-ExtraBold-Italic.woff2")
+      format("woff2"),
+    url("node_modules/JetBrainsMono/web/woff/JetBrainsMono-ExtraBold-Italic.woff")
+      format("woff");
+}
+
+/* JetBrainsMono-ExtraBold - © 2000-2020 JetBrains s.r.o. Developed with drive and IntelliJ IDEA. */
+@font-face {
+  font-family: "JetBrains Mono ExtraBold";
+  font-style: normal;
+  font-weight: 800;
+  font-feature-settings: "calt" 1, "zero" 1;
+  font-display: swap;
+  src: local("JetBrains Mono Extra Bold"), local("JetBrainsMono-ExtraBold"),
+    url("node_modules/JetBrainsMono/web/woff2/JetBrainsMono-ExtraBold.woff2")
+      format("woff2"),
+    url("node_modules/JetBrainsMono/web/woff/JetBrainsMono-ExtraBold.woff")
+      format("woff");
+}
+
+/* JetBrainsMono-Italic - © 2000-2020 JetBrains s.r.o. Developed with drive and IntelliJ IDEA. */
+@font-face {
+  font-family: "JetBrains Mono";
+  font-style: italic;
+  font-weight: 400;
+  font-feature-settings: "calt" 1, "zero" 1;
+  font-display: swap;
+  src: local("JetBrains Mono Italic"), local("JetBrainsMono-Italic"),
+    url("node_modules/JetBrainsMono/web/woff2/JetBrainsMono-Italic.woff2")
+      format("woff2"),
+    url("node_modules/JetBrainsMono/web/woff/JetBrainsMono-Italic.woff")
+      format("woff");
+}
+
+/* JetBrainsMono-Medium-Italic - © 2000-2020 JetBrains s.r.o. Developed with drive and IntelliJ IDEA. */
+@font-face {
+  font-family: "JetBrains Mono Medium";
+  font-style: italic;
+  font-weight: 500;
+  font-feature-settings: "calt" 1, "zero" 1;
+  font-display: swap;
+  src: local("JetBrains Mono Medium Italic"),
+    local("JetBrainsMono-MediumItalic"),
+    url("node_modules/JetBrainsMono/web/woff2/JetBrainsMono-Medium-Italic.woff2")
+      format("woff2"),
+    url("node_modules/JetBrainsMono/web/woff/JetBrainsMono-Medium-Italic.woff")
+      format("woff");
+}
+
+/* JetBrainsMono-Medium - © 2000-2020 JetBrains s.r.o. Developed with drive and IntelliJ IDEA. */
+@font-face {
+  font-family: "JetBrains Mono Medium";
+  font-style: normal;
+  font-weight: 500;
+  font-feature-settings: "calt" 1, "zero" 1;
+  font-display: swap;
+  src: local("JetBrains Mono Medium"), local("JetBrainsMono-Medium"),
+    url("node_modules/JetBrainsMono/web/woff2/JetBrainsMono-Medium.woff2")
+      format("woff2"),
+    url("node_modules/JetBrainsMono/web/woff/JetBrainsMono-Medium.woff")
+      format("woff");
+}
+
+/* JetBrainsMono-Regular - © 2000-2020 JetBrains s.r.o. Developed with drive and IntelliJ IDEA. */
+@font-face {
+  font-family: "JetBrains Mono";
+  font-style: normal;
+  font-weight: 400;
+  font-feature-settings: "calt" 1, "zero" 1;
+  font-display: swap;
+  src: local("JetBrains Mono Regular"), local("JetBrainsMono-Regular"),
+    url("node_modules/JetBrainsMono/web/woff2/JetBrainsMono-Regular.woff2")
+      format("woff2"),
+    url("node_modules/JetBrainsMono/web/woff/JetBrainsMono-Regular.woff")
+      format("woff");
+}
