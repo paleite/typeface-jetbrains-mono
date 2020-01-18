@@ -1,6 +1,6 @@
 {
   "name": "typeface-jetbrains-mono",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "main": "index.css",
   "author": "Patrick Eriksson <paleite@users.noreply.github.com> (https://github.com/paleite)",
   "license": "MIT",
@@ -17,8 +17,7 @@
     "release": "np"
   },
   "np": {
-    "tests": false,
-    "yarn": false
+    "tests": false
   },
   "dependencies": {
     "JetBrainsMono": "https://github.com/JetBrains/JetBrainsMono/"
