@@ -14,6 +14,7 @@
   "repository": "https://github.com/paleite/typeface-jetbrains-mono",
   "scripts": {
     "build": "node scripts/build.js",
+    "prerelease": "yarn run build",
     "release": "np"
   },
   "np": {
