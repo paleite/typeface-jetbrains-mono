@@ -17,7 +17,8 @@
     "release": "np"
   },
   "np": {
-    "tests": false
+    "tests": false,
+    "yarn": false
   },
   "dependencies": {
     "JetBrainsMono": "https://github.com/JetBrains/JetBrainsMono/"
