@@ -35,8 +35,8 @@ const fontkitOpenAsync = filename =>
         src: [
           `local("${font.fullName}")`,
           `local("${font.postscriptName}")`,
-          `url("./${relativename.replace(/woff/g, "woff2")}") format("woff2")`,
-          `url("./${relativename}") format("woff")`
+          `url("${relativename.replace(/woff/g, "woff2")}") format("woff2")`,
+          `url("${relativename}") format("woff")`
         ].join()
       };
       const fontFaceSource = Object.keys(fontFace)
@@ -51,12 +51,12 @@ const fontkitOpenAsync = filename =>
 
 (async () => {
   const filePaths = await globby(["**/*.woff"], {
-    cwd: path.join(__dirname, "../files"),
+    cwd: path.join(__dirname, "../node_modules/JetBrainsMono/web"),
     absolute: true
   });
 
   const outputArray = await Promise.all(
-    filePaths.map(filePath => fontkitOpenAsync(filePath))
+    filePaths.sort().map(filePath => fontkitOpenAsync(filePath))
   );
 
   const formattedOutput = prettier.format(outputArray.join("\n"), {
