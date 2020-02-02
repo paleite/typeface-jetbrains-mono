@@ -54,7 +54,7 @@ const fontkitOpenAsync = filename =>
 
 (async () => {
   const filePaths = await globby(["**/*.woff"], {
-    cwd: path.join(__dirname, "../node_modules/JetBrainsMono/web"),
+    cwd: path.join(__dirname, "../../node_modules/JetBrainsMono/web"),
     absolute: true
   });
 
