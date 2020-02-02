@@ -18,7 +18,10 @@ const fontkitOpenAsync = filename =>
         : "normal";
       const fontFeatureSettings = font.availableFeatures;
 
-      const relativename = path.relative(process.cwd(), filename);
+      const relativename = path.join(
+        "../",
+        path.relative(process.cwd(), filename)
+      );
 
       const header = `/* ${path.basename(filename, ".woff")} - ${
         font.copyright
