@@ -33,7 +33,8 @@
   font-weight: 800;
   font-feature-settings: "calt" 1, "zero" 1;
   font-display: swap;
-  src: local("JetBrains Mono ExtBd Ita"), local("JetBrainsMono-ExtraBoldItalic"),
+  src: local("JetBrains Mono ExtraBold Italic"),
+    local("JetBrainsMono-ExtraBoldItalic"),
     url("../../node_modules/JetBrainsMono/web/woff2/JetBrainsMono-ExtraBold-Italic.woff2")
       format("woff2"),
     url("../../node_modules/JetBrainsMono/web/woff/JetBrainsMono-ExtraBold-Italic.woff")
@@ -47,7 +48,7 @@
   font-weight: 800;
   font-feature-settings: "calt" 1, "zero" 1;
   font-display: swap;
-  src: local("JetBrains Mono Extra Bold"), local("JetBrainsMono-ExtraBold"),
+  src: local("JetBrains Mono ExtraBold"), local("JetBrainsMono-ExtraBold"),
     url("../../node_modules/JetBrainsMono/web/woff2/JetBrainsMono-ExtraBold.woff2")
       format("woff2"),
     url("../../node_modules/JetBrainsMono/web/woff/JetBrainsMono-ExtraBold.woff")
