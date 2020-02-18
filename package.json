@@ -14,7 +14,7 @@
   "main": "index.css",
   "scripts": {
     "build": "node scripts/build.js",
-    "install": "napa JetBrains/JetBrainsMono",
+    "postinstall": "napa JetBrains/JetBrainsMono",
     "prerelease": "yarn run build",
     "release": "np"
   },
