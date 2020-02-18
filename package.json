@@ -1,9 +1,6 @@
 {
   "name": "typeface-jetbrains-mono",
   "version": "0.1.2",
-  "main": "index.css",
-  "author": "Patrick Eriksson <paleite@users.noreply.github.com> (https://github.com/paleite)",
-  "license": "MIT",
   "description": "JetBrains Mono typeface",
   "keywords": [
     "typeface",
@@ -12,13 +9,13 @@
     "jetbrains-mono"
   ],
   "repository": "https://github.com/paleite/typeface-jetbrains-mono",
+  "license": "MIT",
+  "author": "Patrick Eriksson <paleite@users.noreply.github.com> (https://github.com/paleite)",
+  "main": "index.css",
   "scripts": {
     "build": "node scripts/build.js",
     "prerelease": "yarn run build",
     "release": "np"
-  },
-  "np": {
-    "tests": false
   },
   "dependencies": {
     "JetBrainsMono": "https://github.com/JetBrains/JetBrainsMono/"
@@ -28,5 +25,8 @@
     "globby": "^11.0.0",
     "np": "^5.2.1",
     "prettier": "^1.19.1"
+  },
+  "np": {
+    "tests": false
   }
 }
