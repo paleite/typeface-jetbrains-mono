@@ -14,15 +14,14 @@
   "main": "index.css",
   "scripts": {
     "build": "node scripts/build.js",
+    "install": "napa JetBrains/JetBrainsMono",
     "prerelease": "yarn run build",
     "release": "np"
-  },
-  "dependencies": {
-    "JetBrainsMono": "https://github.com/JetBrains/JetBrainsMono/"
   },
   "devDependencies": {
     "fontkit": "^1.8.0",
     "globby": "^11.0.0",
+    "napa": "^3.0.0",
     "np": "^6.1.0",
     "prettier": "^1.19.1"
   },
