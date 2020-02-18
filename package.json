@@ -18,10 +18,12 @@
     "prerelease": "yarn run build",
     "release": "np"
   },
+  "dependencies": {
+    "napa": "^3.0.0"
+  },
   "devDependencies": {
     "fontkit": "^1.8.0",
     "globby": "^11.0.0",
-    "napa": "^3.0.0",
     "np": "^6.1.0",
     "prettier": "^1.19.1"
   },
