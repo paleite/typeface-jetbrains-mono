@@ -23,7 +23,7 @@
   "devDependencies": {
     "fontkit": "^1.8.0",
     "globby": "^11.0.0",
-    "np": "^5.2.1",
+    "np": "^6.1.0",
     "prettier": "^1.19.1"
   },
   "np": {
