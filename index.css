@@ -6,9 +6,9 @@
   font-feature-settings: "calt" 1, "zero" 1;
   font-display: swap;
   src: local("JetBrains Mono Bold Italic"), local("JetBrainsMono-BoldItalic"),
-    url("../../node_modules/JetBrainsMono/web/woff2/JetBrainsMono-Bold-Italic.woff2")
+    url("./node_modules/JetBrainsMono/web/woff2/JetBrainsMono-Bold-Italic.woff2")
       format("woff2"),
-    url("../../node_modules/JetBrainsMono/web/woff/JetBrainsMono-Bold-Italic.woff")
+    url("./node_modules/JetBrainsMono/web/woff/JetBrainsMono-Bold-Italic.woff")
       format("woff");
 }
 
@@ -20,9 +20,9 @@
   font-feature-settings: "calt" 1, "zero" 1;
   font-display: swap;
   src: local("JetBrains Mono Bold"), local("JetBrainsMono-Bold"),
-    url("../../node_modules/JetBrainsMono/web/woff2/JetBrainsMono-Bold.woff2")
+    url("./node_modules/JetBrainsMono/web/woff2/JetBrainsMono-Bold.woff2")
       format("woff2"),
-    url("../../node_modules/JetBrainsMono/web/woff/JetBrainsMono-Bold.woff")
+    url("./node_modules/JetBrainsMono/web/woff/JetBrainsMono-Bold.woff")
       format("woff");
 }
 
@@ -35,9 +35,9 @@
   font-display: swap;
   src: local("JetBrains Mono ExtraBold Italic"),
     local("JetBrainsMono-ExtraBoldItalic"),
-    url("../../node_modules/JetBrainsMono/web/woff2/JetBrainsMono-ExtraBold-Italic.woff2")
+    url("./node_modules/JetBrainsMono/web/woff2/JetBrainsMono-ExtraBold-Italic.woff2")
       format("woff2"),
-    url("../../node_modules/JetBrainsMono/web/woff/JetBrainsMono-ExtraBold-Italic.woff")
+    url("./node_modules/JetBrainsMono/web/woff/JetBrainsMono-ExtraBold-Italic.woff")
       format("woff");
 }
 
@@ -49,9 +49,9 @@
   font-feature-settings: "calt" 1, "zero" 1;
   font-display: swap;
   src: local("JetBrains Mono ExtraBold"), local("JetBrainsMono-ExtraBold"),
-    url("../../node_modules/JetBrainsMono/web/woff2/JetBrainsMono-ExtraBold.woff2")
+    url("./node_modules/JetBrainsMono/web/woff2/JetBrainsMono-ExtraBold.woff2")
       format("woff2"),
-    url("../../node_modules/JetBrainsMono/web/woff/JetBrainsMono-ExtraBold.woff")
+    url("./node_modules/JetBrainsMono/web/woff/JetBrainsMono-ExtraBold.woff")
       format("woff");
 }
 
@@ -63,9 +63,9 @@
   font-feature-settings: "calt" 1, "zero" 1;
   font-display: swap;
   src: local("JetBrains Mono Italic"), local("JetBrainsMono-Italic"),
-    url("../../node_modules/JetBrainsMono/web/woff2/JetBrainsMono-Italic.woff2")
+    url("./node_modules/JetBrainsMono/web/woff2/JetBrainsMono-Italic.woff2")
       format("woff2"),
-    url("../../node_modules/JetBrainsMono/web/woff/JetBrainsMono-Italic.woff")
+    url("./node_modules/JetBrainsMono/web/woff/JetBrainsMono-Italic.woff")
       format("woff");
 }
 
@@ -78,9 +78,9 @@
   font-display: swap;
   src: local("JetBrains Mono Medium Italic"),
     local("JetBrainsMono-MediumItalic"),
-    url("../../node_modules/JetBrainsMono/web/woff2/JetBrainsMono-Medium-Italic.woff2")
+    url("./node_modules/JetBrainsMono/web/woff2/JetBrainsMono-Medium-Italic.woff2")
       format("woff2"),
-    url("../../node_modules/JetBrainsMono/web/woff/JetBrainsMono-Medium-Italic.woff")
+    url("./node_modules/JetBrainsMono/web/woff/JetBrainsMono-Medium-Italic.woff")
       format("woff");
 }
 
@@ -92,9 +92,9 @@
   font-feature-settings: "calt" 1, "zero" 1;
   font-display: swap;
   src: local("JetBrains Mono Medium"), local("JetBrainsMono-Medium"),
-    url("../../node_modules/JetBrainsMono/web/woff2/JetBrainsMono-Medium.woff2")
+    url("./node_modules/JetBrainsMono/web/woff2/JetBrainsMono-Medium.woff2")
       format("woff2"),
-    url("../../node_modules/JetBrainsMono/web/woff/JetBrainsMono-Medium.woff")
+    url("./node_modules/JetBrainsMono/web/woff/JetBrainsMono-Medium.woff")
       format("woff");
 }
 
@@ -106,8 +106,8 @@
   font-feature-settings: "calt" 1, "zero" 1;
   font-display: swap;
   src: local("JetBrains Mono Regular"), local("JetBrainsMono-Regular"),
-    url("../../node_modules/JetBrainsMono/web/woff2/JetBrainsMono-Regular.woff2")
+    url("./node_modules/JetBrainsMono/web/woff2/JetBrainsMono-Regular.woff2")
       format("woff2"),
-    url("../../node_modules/JetBrainsMono/web/woff/JetBrainsMono-Regular.woff")
+    url("./node_modules/JetBrainsMono/web/woff/JetBrainsMono-Regular.woff")
       format("woff");
 }
