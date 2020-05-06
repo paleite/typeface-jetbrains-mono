@@ -54,13 +54,14 @@ const fontkitOpenAsync = (filename) =>
   });
 
 (async () => {
-  const filePaths = await globby(["**/*.woff"], {
+  /** Copy woff-files */
+  const woffFilePaths = await globby(["**/*.woff"], {
     cwd: path.join(__dirname, "../node_modules/JetBrainsMono/web"),
     absolute: true,
   });
 
   await Promise.all(
-    filePaths.map((filePath) =>
+    woffFilePaths.map((filePath) =>
       fs.copyFile(
         filePath,
         path.join(__dirname, `../dist/${path.basename(filePath)}`)
@@ -68,8 +69,24 @@ const fontkitOpenAsync = (filename) =>
     )
   );
 
+  /** Copy woff2-files */
+  const woff2FilePaths = await globby(["**/*.woff2"], {
+    cwd: path.join(__dirname, "../node_modules/JetBrainsMono/web"),
+    absolute: true,
+  });
+
+  await Promise.all(
+    woff2FilePaths.map((filePath) =>
+      fs.copyFile(
+        filePath,
+        path.join(__dirname, `../dist/${path.basename(filePath)}`)
+      )
+    )
+  );
+
+  /** Create CSS output*/
   const outputArray = await Promise.all(
-    filePaths
+    woffFilePaths
       .sort()
       .map((filePath) =>
         fontkitOpenAsync(
@@ -78,10 +95,12 @@ const fontkitOpenAsync = (filename) =>
       )
   );
 
+  /** Format CSS output*/
   const formattedOutput = prettier.format(outputArray.join("\n"), {
     parser: "css",
   });
 
+  /** Write CSS output*/
   await fs.writeFile(
     path.join(__dirname, "../dist/index.css"),
     formattedOutput,

@@ -1,6 +1,6 @@
 {
   "name": "typeface-jetbrains-mono",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "JetBrains Mono typeface",
   "keywords": [
     "typeface",
@@ -16,19 +16,18 @@
     "dist"
   ],
   "scripts": {
+    "clean": "rm -rf dist/*",
+    "prebuild": "napa JetBrains/JetBrainsMono",
     "build": "node scripts/build.js",
-    "postinstall": "napa JetBrains/JetBrainsMono",
     "prerelease": "yarn run build",
     "release": "np"
   },
-  "dependencies": {
-    "napa": "^3.0.0"
-  },
   "devDependencies": {
-    "fontkit": "^1.8.0",
+    "fontkit": "^1.8.1",
     "globby": "^11.0.0",
-    "np": "^6.2.1",
-    "prettier": "^2.0.4"
+    "napa": "^3.0.0",
+    "np": "^6.2.3",
+    "prettier": "^2.0.5"
   },
   "np": {
     "tests": false
