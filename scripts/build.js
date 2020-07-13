@@ -27,20 +27,20 @@ const fontkitOpenAsync = (filename) =>
 
       const header = `/* ${fontName} - ${font.copyright} */`;
       const fontFace = {
+        "font-weight": font["OS/2"].usWeightClass,
         "font-family": `"${font.familyName}"`,
         "font-style": fontStyle,
-        "font-weight": font["OS/2"].usWeightClass,
-        "font-feature-settings":
-          fontFeatureSettings.length > 0
-            ? `${fontFeatureSettings.map((feature) => `"${feature}" 1`).join()}`
-            : undefined,
-        "font-display": "swap",
         src: [
           `local("${font.fullName}")`,
           `local("${font.postscriptName}")`,
           `url("${relativenameWoff2}") format("woff2")`,
           `url("${relativenameWoff}") format("woff")`,
         ].join(),
+        "font-feature-settings":
+          fontFeatureSettings.length > 0
+            ? `${fontFeatureSettings.map((feature) => `"${feature}" 1`).join()}`
+            : undefined,
+        "font-display": "swap",
       };
       const fontFaceSource = Object.keys(fontFace)
         .filter((key) => Boolean(fontFace[key]))
