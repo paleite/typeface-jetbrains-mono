@@ -18,12 +18,11 @@ const fontkitOpenAsync = (filename) =>
         : "normal";
       const fontFeatureSettings = font.availableFeatures;
 
-      const relativenameWoff = `./${path.relative(
+      const relativenameWoff2 = `./${path.relative(
         `${process.cwd()}/dist`,
         filename
       )}`;
-      const relativenameWoff2 = relativenameWoff.replace(/woff/g, "woff2");
-      const fontName = path.basename(filename, ".woff");
+      const fontName = path.basename(filename, ".woff2");
 
       const header = `/* ${fontName} - ${font.copyright} */`;
       const fontFace = {
@@ -34,7 +33,6 @@ const fontkitOpenAsync = (filename) =>
           `local("${font.fullName}")`,
           `local("${font.postscriptName}")`,
           `url("${relativenameWoff2}") format("woff2")`,
-          `url("${relativenameWoff}") format("woff")`,
         ].join(),
         "font-feature-settings":
           fontFeatureSettings.length > 0
@@ -54,24 +52,9 @@ const fontkitOpenAsync = (filename) =>
   });
 
 (async () => {
-  /** Copy woff-files */
-  const woffFilePaths = await globby(["**/*.woff"], {
-    cwd: path.join(__dirname, "../node_modules/JetBrainsMono/web"),
-    absolute: true,
-  });
-
-  await Promise.all(
-    woffFilePaths.map((filePath) =>
-      fs.copyFile(
-        filePath,
-        path.join(__dirname, `../dist/${path.basename(filePath)}`)
-      )
-    )
-  );
-
   /** Copy woff2-files */
   const woff2FilePaths = await globby(["**/*.woff2"], {
-    cwd: path.join(__dirname, "../node_modules/JetBrainsMono/web"),
+    cwd: path.join(__dirname, "../node_modules/JetBrainsMono/fonts/webfonts"),
     absolute: true,
   });
 
@@ -86,7 +69,7 @@ const fontkitOpenAsync = (filename) =>
 
   /** Create CSS output*/
   const outputArray = await Promise.all(
-    woffFilePaths
+    woff2FilePaths
       .sort()
       .map((filePath) =>
         fontkitOpenAsync(
