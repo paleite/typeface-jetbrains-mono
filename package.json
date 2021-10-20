@@ -16,9 +16,9 @@
     "dist"
   ],
   "scripts": {
-    "clean": "rm -rf dist/*",
     "prebuild": "napa JetBrains/JetBrainsMono",
     "build": "node scripts/build.js",
+    "clean": "rm -rf dist/*",
     "prerelease": "yarn run build",
     "release": "np"
   },
@@ -26,8 +26,8 @@
     "fontkit": "^1.8.1",
     "globby": "^11.0.1",
     "napa": "^3.0.0",
-    "np": "^6.3.2",
-    "prettier": "^2.0.5"
+    "np": "^7.5.0",
+    "prettier": "^2.4.1"
   },
   "np": {
     "tests": false
