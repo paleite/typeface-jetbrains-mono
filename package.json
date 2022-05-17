@@ -31,5 +31,8 @@
   },
   "np": {
     "tests": false
+  },
+  "resolutions": {
+    "tar": ">=4.4.18"
   }
 }
